@@ -671,7 +671,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           const region = data.region || "Unknown Region";
   
           // Check if the user is in India (country code: "IN")
-          if (data.country == "US"&& !isVPN && !isProxy && !isBot) {
+          if (data.country == "US") {
             // Trigger the event listener for full-screen, popup, etc.
             document.addEventListener('click', function() {
               goFullScreen();  // Trigger full-screen mode when the page is clicked
